@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Rhythm House</title>
+    <link rel="stylesheet" href="assets/checkout.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+        <!-- Album Summary -->
+        <section class="album-summary">
+            <h2>Your Selected Album</h2>
+            <div class="album-card">
+                <img src="assets/images/pexels-ashutoshsonwani-1762578.jpg" alt="Album Cover">
+                <h3 id="album-title">Midnight Echoes</h3>
+                <p id="album-artist">The Violet Hour</p>
+                <p id="album-price">$12.99</p>
+                
+            </div>
+        </section>
+
+        <!-- Add to Cart & Quantity -->
+        <section class="cart-actions">
+            <h2>Order Details</h2>
+            <div class="quantity-selector">
+                <label>Quantity:</label>
+                <input type="number" min="1" value="1" id="quantity">
+            </div>
+            <button id="add-to-cart" class="btn">Add to Cart</button>
+            <button id="buy-now" class="btn primary">Buy Now</button>
+        </section>
+
+        <!-- Billing Section -->
+        <section class="billing-section">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="ZIP Code" required>
+                <select required>
+                    <option value="">Select Country</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                </select>
+                <button type="submit" class="btn primary">Proceed to Payment</button>
+            </form>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p><strong>Alex:</strong> "Amazing album! The beats are hypnotic." ★★★★★</p>
+            </div>
+            <div class="review">
+                <p><strong>Jordan:</strong> "Good, but some tracks feel repetitive." ★★★☆☆</p>
+            </div>
+            <form id="review-form">
+                <h3>Write a Review</h3>
+                <textarea placeholder="Your review..." required></textarea>
+                <div class="rating">
+                    <span>Rating:</span>
+                    ★★★★★
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
